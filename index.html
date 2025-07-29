@@ -3,21 +3,26 @@
   <head>
     <title>MUSTARD</title>
     <style>
-      body {
+      html, body {
         margin: 0;
-        background-color: #fef4c3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        background-color: #000;
       }
       img {
-        max-width: 100%;
-        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
-    <img src="mustard.png" alt="MUSTARD">
+    <img src="mustard.png" alt="Full Screen Mustard">
   </body>
 </html>
