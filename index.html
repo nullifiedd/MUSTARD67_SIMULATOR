@@ -26,3 +26,17 @@
     <img src="mustard.png" alt="Full Screen Mustard">
   </body>
 </html>
+<body>
+  <img src="mustard.png" alt="Full Screen Mustard">
+
+  <audio id="startupSound" src="mustard_sfx.mp3" preload="auto"></audio>
+
+  <script>
+    window.addEventListener("load", function () {
+      const audio = document.getElementById("startupSound");
+      audio.play().catch(function (error) {
+        console.log("Autoplay blocked:", error);
+      });
+    });
+  </script>
+</body>
