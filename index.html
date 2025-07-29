@@ -40,3 +40,13 @@
     });
   </script>
 </body>
+<audio id="startupSound" src="MUSTARD%20%23mustard%20%23spongebob%20%23memes.mp3" preload="auto"></audio>
+
+<script>
+  window.addEventListener("load", function () {
+    const audio = document.getElementById("startupSound");
+    audio.play().catch(function (error) {
+      console.log("Autoplay blocked:", error);
+    });
+  });
+</script>
